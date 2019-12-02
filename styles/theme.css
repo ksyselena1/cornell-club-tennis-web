@@ -1,0 +1,814 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* text and font */
+h1 {
+  color: #781111;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0px #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: solid;
+  border-bottom: solid;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: #292929;
+  text-shadow: 0.5px 0.5px 0px #000000;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+p.p1 {
+  padding-left: 90px;
+  padding-right: 90px;
+  line-height: 1.5;
+}
+
+p strong {
+  color: #990000;
+}
+
+p.titlelogo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #990000;
+  padding-left: 20px;
+  text-shadow: 0.5px 0.5px 0px #ffffff;
+
+}
+
+p.tryoutdate {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.5;
+}
+
+p.tryoutlocation {
+  text-align: center;
+  line-height: 1.5;
+}
+
+p.tryoutlocation1 {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.5;
+}
+
+p.steps {
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 90px;
+  line-height: 1.5;
+}
+
+div a {
+  text-decoration: none;
+  color: #af1111;
+  font-weight: bold;
+}
+
+div a:hover {
+  color: #4e9f3d;
+  text-decoration: underline;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* interactivity */
+.hidden {
+    display: none !important;
+}
+
+/* header + navigation */
+.header {
+  display: flex;
+  background-color: #000000;
+  flex-direction: row;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding-left: 20px;
+}
+
+img.logo{
+  width: 70px;
+  height: 70px;
+}
+
+nav {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-left: 500px;
+  padding-top: 15px;
+}
+
+nav a:hover {
+  color: #d5243e;
+  text-decoration: underline;
+}
+
+nav ul {
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+nav ul li a {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0.1px 0.1px 0px #000000;
+  text-decoration: none;
+}
+
+/* images */
+img.align-center {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  width: 95%;
+  height: 95%;
+}
+
+/* Home Page */
+#homeContent {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+p.donate {
+  font-size: 20px;
+  text-align: center;
+}
+
+#newsletterHeading {
+  text-align: center;
+}
+
+#donate {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#donate a{
+  display: inline-block;
+}
+
+.slideshow{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3%;
+}
+
+.slideshow img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slideshowButtonHolder{
+  position: relative;
+  float: right;
+}
+
+#slideshowNext{
+  align-items: center;
+  border: none;
+  padding: 2px 2px 2px 2px;
+  cursor: pointer;
+}
+
+.newsletter{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Team Page */
+
+#team-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#eboard-first-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#eboard-second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#members-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#members-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#members-three {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#members-four {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#members-five {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#members-six {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamfig {
+  margin: 10px;
+  width: 250px;
+  height: 320px;
+}
+
+.memberfig {
+  margin: 10px;
+  width: 250px;
+  height: 320px;
+}
+
+.scaleimg {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* Tryouts Page */
+.tryoutstop {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tryouts1 {
+  flex: 1;
+}
+
+.tryouts2 {
+  flex: 1;
+}
+
+.tryoutsbottom {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img.tryouts {
+  width: 90%;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+.tryoutsimage {
+  flex: 1;
+  width: 90%;
+  height: 90%;
+}
+
+.attendance {
+  flex: 1;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.attendance ul li {
+  text-align: justify;
+  padding-right: 50px;
+}
+
+
+/* Competition Page */
+
+button {
+  margin: 10px;
+  align-self: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #7c1a1a;
+  background-color: #ffffff;
+  border: 3px solid #7c1a1a;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #7c1a1a;
+  cursor: pointer;
+}
+
+.competitions {
+  display: flex;
+  flex-direction: column;
+}
+
+.comp {
+  display: flex;
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.comp1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.tables {
+  display: flex;
+  flex-direction: row;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 250px;
+    text-align: justify;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.table1 {
+  flex: 1;
+  justify-content: center;
+}
+
+.table2 {
+  flex: 1;
+  justify-content: center;
+}
+
+.table3 {
+  flex: 1;
+  justify-content: center;
+}
+
+.comp-description {
+  text-align: justify;
+}
+
+.text {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img.scoring {
+    display: flex;
+    width: 95%;
+    height: 95%;
+}
+
+.scoreimage {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/* Service Page */
+.servicelarge{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.serviceevent1{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.serviceevent2{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+p a {
+  text-decoration: none;
+  color: #af1111;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.servicep{
+    padding-top: 0;
+    padding-bottom:10px;
+    line-height: 1.5;
+}
+
+p.serviceevent1 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.serviceheader{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.serviceh2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img.serviceimage {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+/* footer */
+footer {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #781111;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  flex: 1;
+}
+
+.copyright {
+  flex: 1;
+}
+
+
+/* tablet */
+@media (max-width: 900px) {
+  html {
+    font-size: 130%;
+  }
+
+  /* header + navigation */
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img.logo {
+    width: 30%;
+    height: 30%;
+  }
+
+  nav ul li {
+    width: 50%;
+    height: 130%;
+  }
+
+  .logo {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+
+  nav {
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  h1 {
+      font-size: 40px;
+      letter-spacing: 3px;
+      padding: 40px;
+  }
+
+  /* tryouts page */
+  .tryoutstop {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tryoutsimage {
+    align-self: center;
+    justify-content: center;
+  }
+
+  .attendance {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+  .tryoutsbottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Competition page */
+  .comp-description {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .tables {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* service page */
+  .servicelarge {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  img.serviceimage {
+      width: 450px;
+  }
+
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  html {
+    font-size: 160%;
+  }
+
+  /* header + navigation */
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img.logo {
+    width: 30%;
+    height: 30%;
+  }
+
+  nav ul li {
+    width: 50%;
+    height: 130%;
+  }
+
+  .logo {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+
+  nav {
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  h1 {
+      font-size: 40px;
+      letter-spacing: 3px;
+      padding: 40px;
+  }
+
+  /* team page */
+
+  #eboard-first-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #eboard-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #members-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #members-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #members-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #members-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #members-five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #members-six {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scaleimg {
+    width: inherit;
+    vertical-align: middle;
+  }
+
+  /* tryouts page */
+  .tryoutstop {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tryoutsimage {
+    align-self: center;
+    justify-content: center;
+  }
+
+  .attendance {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+  .tryoutsbottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* competitions page */
+  .tables {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* service page */
+  img.serviceimage {
+      width: 350px;
+  }
+
+  .serviceevent1{
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+  .serviceevent2{
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  .servicelarge {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* Competition page */
+  .comp-description {
+      display: flex;
+      flex-direction: column;
+  }
+
+}
