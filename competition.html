@@ -1,58 +1,63 @@
 <!DOCTYPE html>
-
 <html lang= "en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cornell Tennis Club</title>
+  <link rel="stylesheet" type="text/css" href="styles/theme.css" media="all"/>
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/compscript.js" type="text/javascript"></script>
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Cornell Tennis Club</title>
-        <link rel="stylesheet" type="text/css" href="styles/theme.css" media="all"/>
-        <script src="scripts/jquery-3.2.1.min.js"></script>
-        <script src="scripts/script.js"></script>
-    </head>
-
-    <body>
-      <header class="header">
-        <div class="logo">
-          <img src="images/tennis-logo.png" alt="Cornell Club Tennis Logo Image" title="Cornell Club Tennis Logo" class="logo" />
-          <p class="titlelogo"> Cornell Club Tennis </p>
+<body>
+  <header class="header">
+      <div class="logo">
+        <div class="imglogo">
+          <!--Source: Cornell Club Tennis-->
+          <img src="images/tennis-logo.png" alt="Cornell Club Tennis Logo" title="Cornell Club Tennis Logo" id="logo"/>
         </div>
-        <div class="navigation">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="tryouts.html">Tryouts</a></li>
-              <li><a href="competition.html">Competition</a></li>
-              <li><a href="service.html">Service</a></li>
-            </ul>
-          </nav>
+        <div class="textlogo">
+          <a class="titlelogo" href="index.html">Cornell Club Tennis</a>
         </div>
-      </header>
+      </div>
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="tryouts.html">Tryouts</a></li>
+            <li><a href="competition.html">Competition</a></li>
+            <li><a href="service.html">Service</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
 
-        <main>
+    <main>
         <h1>Competition</h1>
-            <p class="p1">Every year, Cornell Club Tennis travels around the nation to compete in tournaments against other college club teams. Our club team has historically been one of the strongest in the nation, <strong>placing 4th in the nation in 2016</strong> and <strong>11th in the nation in 2017</strong>. We participate in a variety of national, sectional, and invitational tournaments, including:</p>
+            <p class="p1">Every year, Cornell Club Tennis travels around the nation to compete in tournaments against other college club teams. Our club team has historically been one of the strongest in the nation, <strong>placing 4th in the nation in 2016</strong> and <strong>11th in the nation in 2017</strong>. We participate in a variety of national, sectional, and invitational tournaments, including Battle of the Sections, UMD Invitational, Fall Invitational, Eastern Sectionals, Rutgers Invitational, Western Invite, Spring Invite, and TOC National Championships.</p>
 
           <div class="competitions">
 
-            <button class="comp" id="battle">Battle of the Sections</button>
-            <div class="comp1">
+            <button class="comp selected" id="battle">Battle of the Sections</button>
+            <div class="comp1" id="battle-description">
 
-              <div class="comp-description" id="battle-description"> <p class="p1">The Battle of the Sections is a tournament held in Bethany Beach, DE. This tournament has teams from all across the east coast, giving us an opportunity to compete against teams from the Mid-Atlantic and our own Eastern section.</p></div>
+              <div class="comp-description"> <p class="p1">The Battle of the Sections is a tournament held in Bethany Beach, DE. This tournament has teams from all across the east coast, giving us an opportunity to compete against teams from the Mid-Atlantic and our own Eastern section.</p></div>
 
-              <div class="tables">
+                <div class="tables">
                     <table class="table1">
                         <tr>
-                            <th colspan="3"><strong>Fall 2018- Battle of the Sections</strong></th>
+                            <th colspan="3"><strong>Fall 2018 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>5</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>0</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Philadelphia, PA</th>
-                            <th colspan="4">Gold Bracket 1st Place</th>
+                            <th colspan="7">Philadelphia, PA</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 1st Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -103,15 +108,17 @@
 
                     <table class="table2">
                         <tr>
-                            <th colspan="3"><strong>Fall 2017- Battle of the Sections</strong></th>
+                            <th colspan="3"><strong>Fall 2017 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>3</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>2</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Bethany Beach, DE</th>
-                            <th colspan="4">Bronze Bracket 11th Place</th>
+                            <th colspan="7">Bethany Beach, DE</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Bronze Bracket 11th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -163,22 +170,24 @@
             </div>
 
             <button class="comp" id="umd">UMD Invitational</button>
-            <div class="comp1">
+            <div class="comp1 hidden" id= "umd-description">
 
-              <div class="comp-description" id= "umd-description"><p class="p1">The UMD Invitational is a tournament held in College Park, Maryland, giving us the chance to compete against Mid-Atlantic teams such as UMBC and UMD.</p></div>
+              <div class="comp-description"><p class="p1">The UMD Invitational is a tournament held in College Park, Maryland, giving us the chance to compete against Mid-Atlantic teams such as UMBC and UMD.</p></div>
 
                 <div class="tables">
                     <table class="table1">
                         <tr>
-                            <th colspan="3"><strong>Spring 2018- UMD Invitational</strong></th>
+                            <th colspan="3"><strong>Spring 2018 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>6</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>0</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">College Park, MD</th>
-                            <th colspan="4">Gold Bracket 1st Place</th>
+                            <th colspan="7">College Park, MD</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 1st Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -238,15 +247,17 @@
 
                     <table class="table2">
                         <tr>
-                            <th colspan="3"><strong>Fall 2017- UMD Invitational</strong></th>
+                            <th colspan="3"><strong>Fall 2017 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>2</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>2</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">College Park, MD</th>
-                            <th colspan="4">Gold Bracket 1st Place</th>
+                            <th colspan="7">College Park, MD</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 1st Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -289,21 +300,24 @@
             </div>
 
             <button class="comp" id="fall">Fall Invitational</button>
-            <div class="comp1">
-                <div class="comp-description" id="fall-description"> <p class="p1">Fall Invite is a big national tournament held in Cary, North Carolina. There, we get the chance to compete against teams we would never otherwise play, such as Georgia Tech, Auburn, and UNC.</p></div>
+            <div class="comp1 hidden" id="fall-description">
+
+              <div class="comp-description"> <p class="p1">Fall Invite is a big national tournament held in Cary, North Carolina. There, we get the chance to compete against teams we would never otherwise play, such as Georgia Tech, Auburn, and UNC.</p></div>
 
                 <div class="tables">
                     <table class="table1">
                         <tr>
-                            <th colspan="3"><strong>Fall 2019- Fall Invitational</strong></th>
+                            <th colspan="3"><strong>Fall 2019 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>7</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>0</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Cary, NC</th>
-                            <th colspan="4">Gold Bracket 1st Place</th>
+                            <th colspan="7">Cary, NC</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 1st Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -371,15 +385,17 @@
                     </table>
                     <table class="table2">
                         <tr>
-                            <th colspan="3"><strong>Fall 2018- Fall Invitational</strong></th>
+                            <th colspan="3"><strong>Fall 2018 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>4</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>3</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Cary, NC</th>
-                            <th colspan="4">Gold Bracket 8th Place</th>
+                            <th colspan="7">Cary, NC</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 8th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -447,15 +463,17 @@
                     </table>
                     <table class="table3">
                         <tr>
-                            <th colspan="3"><strong>Fall 2017- Fall Invitational</strong></th>
+                            <th colspan="3"><strong>Fall 2017 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>6</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>1</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Cary, NC</th>
-                            <th colspan="4">Gold Bracket 5th Place</th>
+                            <th colspan="7">Cary, NC</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 5th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -525,21 +543,24 @@
             </div>
 
             <button class="comp" id="east">Eastern Sectionals</button>
-            <div class="comp1">
-              <div class="comp-description" id="east-description"> <p class="p1">Eastern Sectionals is our most important tournament in the fall. We compete against teams in the Eastern section, such as Columbia, Rutgers, and Rochester. The top 4 teams get a bid to nationals; we typically take an A and a B team, and both often make it into the top 4.</p></div>
+            <div class="comp1 hidden" id="east-description">
+
+              <div class="comp-description"> <p class="p1">Eastern Sectionals is our most important tournament in the fall. We compete against teams in the Eastern section, such as Columbia, Rutgers, and Rochester. The top 4 teams get a bid to nationals; we typically take an A and a B team, and both often make it into the top 4.</p></div>
 
                 <div class="tables">
                     <table class="table1">
                         <tr>
-                            <th colspan="3"><strong>2018- Sectionals (A)</strong></th>
+                            <th colspan="3"><strong>2018 Results- Sectionals (A)</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>6</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>0</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Bronx, NY</th>
-                            <th colspan="4">Gold Bracket 1st Place</th>
+                            <th colspan="7">Bronx, NY</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 1st Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -599,22 +620,25 @@
                 </div>
             </div>
 
-            <button class="comp" id="rutgers">Rutgers Invitational</button>
+            <button class="comp not_selected" id="rutgers">Rutgers Invitational</button>
+            <div class="comp1 hidden" id="rutgers-description">
 
-            <div class="comp1">
-                <div class="comp-description" id="rutgers-description"> <p class="p1">Rutgers is a small, one day invitational held in Brunswick, NJ. The tournament gives us an additional chance to compete during the beginning of Spring semester, when there are few tournaments.</p></div>
+              <div class="comp-description"> <p class="p1">Rutgers is a small, one day invitational held in Brunswick, NJ. The tournament gives us an additional chance to compete during the beginning of Spring semester, when there are few tournaments.</p></div>
+
                 <div class="tables">
                     <table class="table1">
                         <tr>
-                            <th colspan="3"><strong>Spring 2019- Rutgers Invitational</strong></th>
+                            <th colspan="3"><strong>Spring 2019 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>3</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>0</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Brunswick, NJ</th>
-                            <th colspan="4">Gold Bracket 1st Place</th>
+                            <th colspan="7">Brunswick, NJ</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 1st Place</th>
                         </tr>
                         <tr>
                             <td>Q</td>
@@ -648,20 +672,24 @@
             </div>
 
             <button class="comp" id="west">Western Invite</button>
-              <div class="comp1">
-                <div class="comp-description" id="west-description"><p class="p1">Western Invite is a small, one day invitational held in Rochester, NY. We compete against teams from the Eastern section; the tournament gives us an additional chance to compete during the beginning of Spring semester, when there are few tournaments.</p></div>
+            <div class="comp1 hidden" id="west-description">
+
+              <div class="comp-description"><p class="p1">Western Invite is a small, one day invitational held in Rochester, NY. We compete against teams from the Eastern section; the tournament gives us an additional chance to compete during the beginning of Spring semester, when there are few tournaments.</p></div>
+
                 <div class="tables">
                     <table class="table1">
                         <tr>
-                            <th colspan="3"><strong>Spring 2018- Western Invitational</strong></th>
+                            <th colspan="3"><strong>Spring 2018 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>3</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>0</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Rochester, NY</th>
-                            <th colspan="4">Gold Bracket 1st Place</th>
+                            <th colspan="7">Rochester, NY</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 1st Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -694,15 +722,17 @@
 
                     <table class="table2">
                         <tr>
-                            <th colspan="3"><strong>Spring 2017- Western Invitational</strong></th>
+                            <th colspan="3"><strong>Spring 2017 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>3</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>0</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Rochester, NY</th>
-                            <th colspan="4">Gold Bracket 1st Place</th>
+                            <th colspan="7">Rochester, NY</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 1st Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -736,21 +766,24 @@
             </div>
 
             <button class="comp" id="spring">Spring Invite</button>
-              <div class="comp1">
-                <div class="comp-description" id="spring-description"> <p class="p1">Spring Invite is a large National tournament first held in Surprise, AZ, and then Orlando, FL. Here, Cornell gets to compete against some of the top teams in the nation at a very high level; historically, Cornell has done well at Spring Invite, often making it into Gold Bracket.</p></div>
+            <div class="comp1 hidden" id="spring-description">
+
+              <div class="comp-description"> <p class="p1">Spring Invite is a large National tournament first held in Surprise, AZ, and then Orlando, FL. Here, Cornell gets to compete against some of the top teams in the nation at a very high level; historically, Cornell has done well at Spring Invite, often making it into Gold Bracket.</p></div>
 
                 <div class="tables">
                     <table class="table1">
                         <tr>
-                            <th colspan="3"><strong>Spring 2019- Spring Invitational</strong></th>
+                            <th colspan="3"><strong>Spring 2019 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>5</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>2</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Orlando, FL</th>
-                            <th colspan="4">Gold Bracket 6th Place</th>
+                            <th colspan="7">Orlando, FL</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 6th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -818,15 +851,17 @@
                     </table>
                     <table class="table2">
                         <tr>
-                            <th colspan="3"><strong>Spring 2018- Spring Inviatational</strong></th>
+                            <th colspan="3"><strong>Spring 2018 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>5</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>2</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Surprise, AZ</th>
-                            <th colspan="4">Gold Bracket 13th Place</th>
+                            <th colspan="7">Surprise, AZ</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 13th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -895,15 +930,17 @@
 
                     <table class="table3">
                         <tr>
-                            <th colspan="3"><strong>Spring 2017- Spring Invitational</strong></th>
+                            <th colspan="3"><strong>Spring 2017 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>5</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>2</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Surprise, AZ</th>
-                            <th colspan="4">Gold Bracket 13th Place</th>
+                            <th colspan="7">Surprise, AZ</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 13th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -973,20 +1010,24 @@
               </div>
 
             <button class="comp" id="toc">TOC National Championships</button>
-              <div class="comp1">
-                <div class="comp-description" id="toc-description"><p class="p1">Tennis on Campus's biggest tournament of the year; held at the National Tennis Campus in first Orlando, Florida, and then moved to Surprise, AZ, colleges all across the country bring their best players to compete for the National Championship. Cornell has done well at past national championships, placing 4th in 2016 and 2019, and 11th in 2017.</p></div>
+            <div class="comp1 hidden" id="toc-description">
+
+              <div class="comp-description"><p class="p1">Tennis on Campus's biggest tournament of the year; held at the National Tennis Campus in first Orlando, Florida, and then moved to Surprise, AZ, colleges all across the country bring their best players to compete for the National Championship. Cornell has done well at past national championships, placing 4th in 2016 and 2019, and 11th in 2017.</p></div>
+
                 <div class="tables">
                     <table class="table1">
                         <tr>
-                            <th colspan="3"><strong>Spring 2019- TOC Nationals</strong></th>
+                            <th colspan="3"><strong>Spring 2019 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>5</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>2</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Surprise, AZ</th>
-                            <th colspan="4">Gold Bracket 4th Place</th>
+                            <th colspan="7">Surprise, AZ</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 4th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -1055,15 +1096,17 @@
 
                     <table class="table2">
                         <tr>
-                            <th colspan="3"><strong>Spring 2018- TOC Nationals</strong></th>
+                            <th colspan="3"><strong>Spring 2018 Results</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>5</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>2</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Orlando, FL</th>
-                            <th colspan="4">Gold Bracket 7th Place</th>
+                            <th colspan="7">Orlando, FL</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 7th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -1132,15 +1175,17 @@
 
                     <table class="table3">
                         <tr>
-                            <th colspan="3"><strong>Spring 2017- TOC Nationals</strong></th>
+                            <th colspan="3"><strong>Spring 2017</strong></th>
                             <th><strong>Record:</strong></th>
                             <th><strong>5</strong></th>
                             <th><strong>-</strong></th>
                             <th><strong>2</strong></th>
                         </tr>
                         <tr>
-                            <th colspan="3">Orlando, FL</th>
-                            <th colspan="4">Gold Bracket 11th Place</th>
+                            <th colspan="7">Orlando, FL</th>
+                        </tr>
+                        <tr>
+                            <th colspan="7">Gold Bracket 11th Place</th>
                         </tr>
                         <tr>
                             <td>RR</td>
@@ -1215,20 +1260,19 @@
             <img class="scoring" src="images/scoring.png" alt=" Captain's Scoring Guide" title="Captain's Scoring Guide"/>
             <!--Source: Cornell Club Tennis-->
           </div>
-        </main>
+    </main>
 
-        <footer>
-          <div id="social">
-            <a href="https://www.facebook.com/CornellClubTennis/">Facebook</a>
-            <a href="https://twitter.com/BigRedClubTenis/">Twitter</a>
-            <a href="https://www.instagram.com/cornellclubtennis/">Instagram</a>
-          </div>
+    <footer>
+      <div id="social">
+        <a href="https://www.facebook.com/CornellClubTennis/">Facebook</a>
+        <a href="https://twitter.com/BigRedClubTenis/">Twitter</a>
+        <a href="https://www.instagram.com/cornellclubtennis/">Instagram</a>
+      </div>
 
-          <div id="copyright"> Copyright &copy; 2019-2020 Cornell Club Tennis. All rights reserved.
-          </div>
+      <div id="copyright"> Copyright &copy; 2019-2020 Cornell Club Tennis. All rights reserved.
+      </div>
+    </footer>
 
-        </footer>
-
-    </body>
-
+</body>
 </html>
+
